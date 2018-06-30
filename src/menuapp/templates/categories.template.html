@@ -1,0 +1,21 @@
+<ul>
+
+<!--
+  <li ng-repeat="item in $ctrl.items"
+      ui-sref="itemDetail({itemId: $index})">
+	-->
+	<!--
+	    <li ng-repeat="item in $ctrl.items"
+     ui-sref="itemDetail({itemId: $index})"   ng-click="mainList.removeItem($index);">
+		-->
+		    <li ng-repeat="item in $ctrl.items"
+     ui-sref="itemDetail({categoryShortName:item.short_name})"   ng-click="mainList.removeItem($index);">
+	     {{ item.short_name }} - {{ item.name }}
+		  <!-- <button ng-click="item.removeItem($index);"></button>
+		 	<a href="Assignment04/#/item-Detail/{{ item.short_name }}">   {{ item.short_name }} </a>-->
+	   </li> 
+	 
+
+
+</ul>
+
